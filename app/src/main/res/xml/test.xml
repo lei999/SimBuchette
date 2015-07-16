@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenario>
+    <fenetre>
+        <taille>M</taille>
+        <nb_buchettes>100</nb_buchettes>
+        <nb_groupement3>100</nb_groupement3>
+        <nb_groupement10>100</nb_groupement10>
+        <utilisation_zone_groupements>oui</utilisation_zone_groupements>
+    </fenetre>
+
+    <boutons>
+        <vider></vider>
+        <annuler></annuler>
+        <terminer></terminer>
+        <reset></reset>
+    </boutons>
+
+    <boite>
+        <num_boite>1</num_boite>
+        <nom> boite A </nom>
+        <nb_max_objets>4</nb_max_objets>
+        <type_objet>groupement3</type_objet>
+        <different_objet></different_objet>
+        <affichage_machine></affichage_machine>
+        <popup></popup>
+    </boite>
+
+    <boite>
+        <num_boite>2</num_boite>
+        <nom> boite B</nom>
+        <nb_max_objets>100</nb_max_objets>
+        <type_objet>buchette</type_objet>
+        <affichage_machine></affichage_machine>
+    </boite>
+
+    <boite>
+        <num_boite>3</num_boite>
+        <nom>boite C</nom>
+        <nb_max_objets>100</nb_max_objets>
+        <type_objet>buchette</type_objet>
+    </boite>
+
+    <boite>
+        <num_boite>4</num_boite>
+        <nom>boite D</nom>
+        <nb_max_objets>100</nb_max_objets>
+        <type_objet>groupement3</type_objet>
+    </boite>
+
+
+    <solution>
+        <boite>
+            <num_boite>1</num_boite>
+            <type_objet>groupement3</type_objet>
+            <nb_objets>4</nb_objets>
+        </boite>
+    </solution>
+
+    <solution>
+        <boite>
+            <num_boite>2</num_boite>
+            <type_objet>buchette</type_objet>
+            <nb_objets>3</nb_objets>
+        </boite>
+    </solution>
+    <solution>
+        <boite>
+            <num_boite>3</num_boite>
+            <type_objet>buchette</type_objet>
+            <nb_objets>5</nb_objets>
+        </boite>
+    </solution>
+
+    <solution>
+        <boite>
+            <num_boite>4</num_boite>
+            <type_objet>groupement3</type_objet>
+            <nb_objets>1</nb_objets>
+        </boite>
+    </solution>
+
+    <consigne> Mettre 4 groupement3 dans la boite A , 3 bûchettes dans la boite B et 5 bûchettes dans la boite C et 1 groupement3 dans la boite D </consigne>
+
+
+</scenario>

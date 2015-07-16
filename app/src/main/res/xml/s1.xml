@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenario>
+    <taille_objets>
+        <taille_buchettes>P</taille_buchettes>   <!-- valeurs possibles : G | M | P , même taille pour les groupements -->
+        <taille_boites>M</taille_boites>   <!-- valeurs possibles : G | M -->
+        <!-- grandes buchettes && boites moyennes : dépot maximal de 5 buchettes -->
+        <!-- moyennes buchettes && boites moyennes : dépot maximal de 10 buchettes -->
+        <!-- petites buchettes && boites moyennes : dépot maximal de 15 buchettes -->
+        <!-- petites buchettes && boites grandes : dépot maximal de 25 buchettes -->
+    </taille_objets>
+
+
+
+
+    <elements_presents_dans_interface>
+        <zone_groupements>oui</zone_groupements>   <!-- valeurs possibles : oui | non -->
+        <zone_duplication>oui</zone_duplication>   <!-- valeurs possibles : oui | non -->
+        <poubelle>oui</poubelle>   <!-- valeurs possibles : oui | non -->
+        <bouton_fin>Terminer</bouton_fin>    <!-- valeurs possibles : Suivant | Terminer  -->
+    </elements_presents_dans_interface>
+
+
+
+
+    <contraintes_cardinalite_reserve>
+        <nb_buchettes_depart>1</nb_buchettes_depart>    <!-- valeurs possibles : >0 -->
+        <nb_groupement3_depart>1</nb_groupement3_depart>    <!-- valeurs possibles : >0  -->
+        <nb_groupement10_depart>1</nb_groupement10_depart>    <!-- valeurs possibles : >0  -->
+        <nb_groupement100_unites_depart>1</nb_groupement100_unites_depart>    <!-- valeurs possibles : >0  -->
+        <nb_groupement_100_groupement_10_depart>1</nb_groupement_100_groupement_10_depart>    <!-- valeurs possibles : >0  -->
+    </contraintes_cardinalite_reserve>
+
+
+
+
+    <boite_1>
+        <visible>oui</visible>   <!-- valeurs possibles : oui | non -->
+        <nom_affiche> boite1 </nom_affiche>
+        <afficher_cardinalite_totale>oui</afficher_cardinalite_totale>  <!-- valeurs possibles : oui | non -->
+        <afficher_nombre_elements>oui</afficher_nombre_elements>   <!-- valeurs possibles : oui | non -->
+        <contraintes_boite>
+            <buchette>
+                <nombre_contenu_initialement>1</nombre_contenu_initialement>
+                <nombre_max>5</nombre_max>    <!-- valeurs possibles : >0 -->
+                <comportement_si_depassement>autorisation_action</comportement_si_depassement>   <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+                <message_si_autorisation>buchette autorisation</message_si_autorisation>
+                <message_si_refus>buchette refus</message_si_refus>
+            </buchette>
+
+            <groupement10>
+                <nombre_contenu_initialement>0</nombre_contenu_initialement>
+                <nombre_max>0</nombre_max>    <!-- valeurs possibles : >0 -->
+                <comportement_si_depassement>autorisation_action</comportement_si_depassement>   <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+                <message_si_autorisation>groupement10 autorisation</message_si_autorisation>
+                <message_si_refus>groupement10 refus</message_si_refus>
+            </groupement10>
+
+            <groupement100_unites>
+                <nombre_contenu_initialement>0</nombre_contenu_initialement>
+                <nombre_max>0</nombre_max>    <!-- valeurs possibles : >0 -->
+                <comportement_si_depassement>autorisation_action</comportement_si_depassement>   <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+                <message_si_autorisation>groupement100 u autorisation</message_si_autorisation>
+                <message_si_refus>groupement 100 u refus</message_si_refus>
+            </groupement100_unites>
+
+            <groupement_100_groupement_10>
+                <nombre_contenu_initialement>0</nombre_contenu_initialement>
+                <nombre_max>0</nombre_max>    <!-- valeurs possibles : >0 -->
+                <comportement_si_depassement>autorisation_action</comportement_si_depassement>   <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+                <message_si_autorisation>groupement100 10 autorisation</message_si_autorisation>
+                <message_si_refus>groupement100 10 refus</message_si_refus>
+            </groupement_100_groupement_10>
+        </contraintes_boite>
+    </boite_1>
+
+
+
+    <boite_2>
+        <visible>oui</visible>   <!-- valeurs possibles : oui | non -->
+        <nom_affiche> boite2 </nom_affiche>
+        <afficher_cardinalite_totale>oui</afficher_cardinalite_totale>  <!-- valeurs possibles : oui | non -->
+        <afficher_nombre_elements>oui</afficher_nombre_elements>   <!-- valeurs possibles : oui | non -->
+        <contraintes_boite>
+            <buchette>
+                <nombre_contenu_initialement>0</nombre_contenu_initialement>
+                <nombre_max>0</nombre_max>    <!-- valeurs possibles : >0 -->
+                <comportement_si_depassement>autorisation_action</comportement_si_depassement>   <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+                <message_si_autorisation>buchette autorisation</message_si_autorisation>
+                <message_si_refus>buchette refus</message_si_refus>
+            </buchette>
+
+            <groupement10>
+                <nombre_contenu_initialement>1</nombre_contenu_initialement>
+                <nombre_max>5</nombre_max>    <!-- valeurs possibles : >0 -->
+                <comportement_si_depassement>autorisation_action</comportement_si_depassement>   <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+                <message_si_autorisation>groupement10 autorisation</message_si_autorisation>
+                <message_si_refus>groupement10 refus</message_si_refus>
+            </groupement10>
+
+            <groupement100_unites>
+                <nombre_contenu_initialement>0</nombre_contenu_initialement>
+                <nombre_max>0</nombre_max>    <!-- valeurs possibles : >0 -->
+                <comportement_si_depassement>autorisation_action</comportement_si_depassement>   <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+                <message_si_autorisation>groupement100 u autorisation</message_si_autorisation>
+                <message_si_refus>groupement 100 u refus</message_si_refus>
+            </groupement100_unites>
+
+            <groupement_100_groupement_10>
+                <nombre_contenu_initialement>0</nombre_contenu_initialement>
+                <nombre_max>0</nombre_max>    <!-- valeurs possibles : >0 -->
+                <comportement_si_depassement>autorisation_action</comportement_si_depassement>   <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+                <message_si_autorisation>groupement100 10 autorisation</message_si_autorisation>
+                <message_si_refus>groupement100 10 refus</message_si_refus>
+            </groupement_100_groupement_10>
+        </contraintes_boite>
+    </boite_2>
+
+
+
+    <boite_3>
+        <visible>oui</visible>   <!-- valeurs possibles : oui | non -->
+        <nom_affiche> boite3 </nom_affiche>
+        <afficher_cardinalite_totale>oui</afficher_cardinalite_totale>  <!-- valeurs possibles : oui | non -->
+        <afficher_nombre_elements>oui</afficher_nombre_elements>   <!-- valeurs possibles : oui | non -->
+        <contraintes_boite>
+            <buchette>
+                <nombre_contenu_initialement>0</nombre_contenu_initialement>
+                <nombre_max>0</nombre_max>    <!-- valeurs possibles : >0 -->
+                <comportement_si_depassement>autorisation_action</comportement_si_depassement>   <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+                <message_si_autorisation>buchette autorisation</message_si_autorisation>
+                <message_si_refus>buchette refus</message_si_refus>
+            </buchette>
+
+            <groupement10>
+                <nombre_contenu_initialement>0</nombre_contenu_initialement>
+                <nombre_max>0</nombre_max>    <!-- valeurs possibles : >0 -->
+                <comportement_si_depassement>autorisation_action</comportement_si_depassement>   <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+                <message_si_autorisation>groupement10 autorisation</message_si_autorisation>
+                <message_si_refus>groupement10 refus</message_si_refus>
+            </groupement10>
+
+            <groupement100_unites>
+                <nombre_contenu_initialement>1</nombre_contenu_initialement>
+                <nombre_max>5</nombre_max>    <!-- valeurs possibles : >0 -->
+                <comportement_si_depassement>autorisation_action</comportement_si_depassement>   <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+                <message_si_autorisation>groupement100 u autorisation</message_si_autorisation>
+                <message_si_refus>groupement 100 u refus</message_si_refus>
+            </groupement100_unites>
+
+            <groupement_100_groupement_10>
+                <nombre_contenu_initialement>0</nombre_contenu_initialement>
+                <nombre_max>0</nombre_max>    <!-- valeurs possibles : >0 -->
+                <comportement_si_depassement>autorisation_action</comportement_si_depassement>   <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+                <message_si_autorisation>groupement100 10 autorisation</message_si_autorisation>
+                <message_si_refus>groupement100 10 refus</message_si_refus>
+            </groupement_100_groupement_10>
+        </contraintes_boite>
+    </boite_3>
+
+
+
+    <boite_4>
+        <visible>oui</visible>   <!-- valeurs possibles : oui | non -->
+        <nom_affiche> boite4 </nom_affiche>
+        <afficher_cardinalite_totale>oui</afficher_cardinalite_totale>  <!-- valeurs possibles : oui | non -->
+        <afficher_nombre_elements>oui</afficher_nombre_elements>   <!-- valeurs possibles : oui | non -->
+        <contraintes_boite>
+            <buchette>
+                <nombre_contenu_initialement>0</nombre_contenu_initialement>
+                <nombre_max>0</nombre_max>    <!-- valeurs possibles : >0 -->
+                <comportement_si_depassement>autorisation_action</comportement_si_depassement>   <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+                <message_si_autorisation>buchette autorisation</message_si_autorisation>
+                <message_si_refus>buchette refus</message_si_refus>
+            </buchette>
+
+            <groupement10>
+                <nombre_contenu_initialement>0</nombre_contenu_initialement>
+                <nombre_max>0</nombre_max>    <!-- valeurs possibles : >0 -->
+                <comportement_si_depassement>autorisation_action</comportement_si_depassement>   <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+                <message_si_autorisation>groupement10 autorisation</message_si_autorisation>
+                <message_si_refus>groupement10 refus</message_si_refus>
+            </groupement10>
+
+            <groupement100_unites>
+                <nombre_contenu_initialement>0</nombre_contenu_initialement>
+                <nombre_max>0</nombre_max>    <!-- valeurs possibles : >0 -->
+                <comportement_si_depassement>autorisation_action</comportement_si_depassement>   <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+                <message_si_autorisation>groupement100 u autorisation</message_si_autorisation>
+                <message_si_refus>groupement 100 u refus</message_si_refus>
+            </groupement100_unites>
+
+            <groupement_100_groupement_10>
+                <nombre_contenu_initialement>1</nombre_contenu_initialement>
+                <nombre_max>5</nombre_max>    <!-- valeurs possibles : >0 -->
+                <comportement_si_depassement>autorisation_action</comportement_si_depassement>   <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+                <message_si_autorisation>groupement100 10 autorisation</message_si_autorisation>
+                <message_si_refus>groupement100 10 refus</message_si_refus>
+            </groupement_100_groupement_10>
+        </contraintes_boite>
+    </boite_4>
+
+
+    <regles_groupements>
+        <groupement_10>
+            <autorise>oui</autorise>   <!-- valeurs possibles : oui | non -->
+            <comportement_si_erreur>autorisation_et_message</comportement_si_erreur>   <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+            <message_autorisation_si_nb_inf>es-tu sur d'avoir mis assez de buchettes pour faire un groupement de 10?</message_autorisation_si_nb_inf>
+            <message_autorisation_si_nb_sup>es-tu sur de ne pas avoir mis trop de buchettes pour faire un groupement de 10?</message_autorisation_si_nb_sup>
+            <message_autorisation_si_non_autorise>es-tu sur d'avoir besoin d'un groupement de 10 ?</message_autorisation_si_non_autorise>
+            <message_refus_si_nb_inf>tu n'as pas mis assez de buchettes pour faire un groupement de 10</message_refus_si_nb_inf>
+            <message_refus_si_nb_sup>tu as mis trop de buchettes pour faire un groupement de 10</message_refus_si_nb_sup>
+            <message_refus_si_non_autorise>tu n'as pas besoin d'un groupement de 10</message_refus_si_non_autorise>
+        </groupement_10>
+
+        <groupement_100_unite>
+            <autorise>oui</autorise>   <!-- valeurs possibles : oui | non -->
+            <comportement_si_erreur>autorisation_et_message</comportement_si_erreur>    <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+            <message_autorisation_si_nb_inf>es-tu sur d'avoir mis assez de buchettes pour faire un groupement de 100?</message_autorisation_si_nb_inf>
+            <message_autorisation_si_nb_sup>es-tu sur de ne pas avoir mis trop de buchettes pour faire un groupement de 100?</message_autorisation_si_nb_sup>
+            <message_autorisation_si_non_autorise>es-tu sur d'avoir besoin d'un groupement de 100 ?</message_autorisation_si_non_autorise>
+            <message_refus_si_nb_inf>tu n'as pas mis assez de buchettes pour faire un groupement de 100</message_refus_si_nb_inf>
+            <message_refus_si_nb_sup>tu as mis trop de buchettes pour faire un groupement de 100</message_refus_si_nb_sup>
+            <message_refus_si_non_autorise>tu n'as pas besoin d'un groupement de 100</message_refus_si_non_autorise>
+        </groupement_100_unite>
+
+        <groupement_100_groupement_10>
+            <autorise>oui</autorise>   <!-- valeurs possibles : oui | non -->
+            <comportement_si_erreur>autorisation_et_message</comportement_si_erreur>    <!-- valeurs possibles : autorisation_action|refus_action|autorisation_et_message|refus_et_message -->
+            <message_autorisation_si_nb_inf>es-tu sur d'avoir mis assez de groupements de 10 pour faire un groupement de 100?</message_autorisation_si_nb_inf>
+            <message_autorisation_si_nb_sup>es-tu sur de ne pas avoir mis trop de groupements de 10 pour faire un groupement de 100 ?</message_autorisation_si_nb_sup>
+            <message_autorisation_si_non_autorise>es-tu sur d'avoir besoin d'un groupement de 100 ?</message_autorisation_si_non_autorise>
+            <message_refus_si_nb_inf>tu n'as pas mis assez de groupements de 10 pour faire un groupement de 100</message_refus_si_nb_inf>
+            <message_refus_si_nb_sup>tu as mis trop de groupements de 10 pour faire un groupement de 100</message_refus_si_nb_sup>
+            <message_refus_si_non_autorise>tu n'as pas besoin d'un groupement de 100</message_refus_si_non_autorise>
+        </groupement_100_groupement_10>
+    </regles_groupements>
+
+
+
+
+
+    <configurations_attendues>
+        <config>
+            <nom_configuration>bonne_solution</nom_configuration>
+            <boite_1>
+                <buchette>0</buchette>
+                <groupement10>2</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_1>
+            <boite_2>
+                <buchette>6</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_2>
+            <boite_3>
+                <buchette>0</buchette>
+                <groupement10>2</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_3>
+            <boite_4>
+                <buchette>6</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_4>
+            <table_vide>oui</table_vide>    <!-- valeurs possibles : oui | non -->
+            <comportement_fin>sortie_message</comportement_fin>    <!-- valeurs possibles : sortie|continuer|sortie_message|continuer_message -->
+            <message_sortie> Bravo ! on continue ? </message_sortie>
+            <message_continuer></message_continuer>
+        </config>
+
+        <config>
+            <nom_configuration>erreur_1</nom_configuration>
+            <boite_1>
+                <buchette>0</buchette>
+                <groupement10>5</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_1>
+            <boite_2>
+                <buchette>2</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_2>
+            <boite_3>
+                <buchette>0</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_3>
+            <boite_4>
+                <buchette>0</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_4>
+            <table_vide>oui</table_vide>    <!-- valeurs possibles : oui | non -->
+            <comportement_fin>continuer_message</comportement_fin>    <!-- valeurs possibles : sortie|continuer|sortie_message|continuer_message -->
+            <message_sortie></message_sortie>
+            <message_continuer>Tu dois laisser la moitié de 52 bûchettes dans ces deux boîtes et mettre l'autre moitié dans les deux autres</message_continuer>
+        </config>
+
+        <config>
+            <nom_configuration>erreur_2</nom_configuration>
+            <boite_1>
+                <buchette>0</buchette>
+                <groupement10>2</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_1>
+            <boite_2>
+                <buchette>6</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_2>
+            <boite_3>
+                <buchette>0</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_3>
+            <boite_4>
+                <buchette>0</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_4>
+            <table_vide>non</table_vide>    <!-- valeurs possibles : oui | non -->
+            <comportement_fin>continuer_message</comportement_fin>    <!-- valeurs possibles : sortie|continuer|sortie_message|continuer_message -->
+            <message_sortie></message_sortie>
+            <message_continuer> Il te reste de bâtons sur la table... Il faut les mettre dans les boîtes qu'il te reste. </message_continuer>
+        </config>
+
+        <config>
+            <nom_configuration>erreur_2bis</nom_configuration>
+            <boite_1>
+                <buchette>0</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_1>
+            <boite_2>
+                <buchette>0</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_2>
+            <boite_3>
+                <buchette>0</buchette>
+                <groupement10>2</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_3>
+            <boite_4>
+                <buchette>6</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_4>
+            <table_vide>non</table_vide>    <!-- valeurs possibles : oui | non -->
+            <comportement_fin>continuer_message</comportement_fin>    <!-- valeurs possibles : sortie|continuer|sortie_message|continuer_message -->
+            <message_sortie></message_sortie>
+            <message_continuer> Il te reste de bâtons sur la table... Il faut les mettre dans les boîtes qu'il te reste. </message_continuer>
+        </config>
+
+        <config>
+            <nom_configuration>erreur_3</nom_configuration>
+            <boite_1>
+                <buchette>0</buchette>
+                <groupement10>2</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_1>
+            <boite_2>
+                <buchette>1</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_2>
+            <boite_3>
+                <buchette>0</buchette>
+                <groupement10>3</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_3>
+            <boite_4>
+                <buchette>1</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_4>
+            <table_vide>oui</table_vide>    <!-- valeurs possibles : oui | non -->
+            <comportement_fin>continuer_message</comportement_fin>    <!-- valeurs possibles : sortie|continuer|sortie_message|continuer_message -->
+            <message_sortie></message_sortie>
+            <message_continuer>Attention : il y a 21 bâtons dans les deux premières boîtes et 31 dans les deux suivantes. Tu dois avoir autant de bâtons dans les deux premières que dans les deux suivantes. </message_continuer>
+        </config>
+
+        <config>
+            <nom_configuration>erreur_3bis</nom_configuration>
+            <boite_1>
+                <buchette>0</buchette>
+                <groupement10>3</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_1>
+            <boite_2>
+                <buchette>1</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_2>
+            <boite_3>
+                <buchette>0</buchette>
+                <groupement10>2</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_3>
+            <boite_4>
+                <buchette>1</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_4>
+            <table_vide>oui</table_vide>    <!-- valeurs possibles : oui | non -->
+            <comportement_fin>continuer_message</comportement_fin>    <!-- valeurs possibles : sortie|continuer|sortie_message|continuer_message -->
+            <message_sortie></message_sortie>
+            <message_continuer>Attention : il y a 31 bâtons dans les deux premières boîtes et 21 dans les deux suivantes. Tu dois avoir autant de bâtons dans les deux premières que dans les deux suivantes. </message_continuer>
+        </config>
+
+        <config>
+            <nom_configuration>erreur_4</nom_configuration>
+            <boite_1>
+                <buchette>0</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_1>
+            <boite_2>
+                <buchette>26</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_2>
+            <boite_3>
+                <buchette>0</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_3>
+            <boite_4>
+                <buchette>26</buchette>
+                <groupement10>0</groupement10>
+                <groupement100_unite>0</groupement100_unite>
+                <groupement_100_groupement_10>0</groupement_100_groupement_10>
+            </boite_4>
+            <table_vide>oui</table_vide>    <!-- valeurs possibles : oui | non -->
+            <comportement_fin>continuer_message</comportement_fin>    <!-- valeurs possibles : sortie|continuer|sortie_message|continuer_message -->
+            <message_sortie></message_sortie>
+            <message_continuer>  Rappel : dans les boîtes unités on ne peut pas dépasser 9 bâtons</message_continuer>
+        </config>
+        <config_par_defaut>
+            <comportement_fin>continuer_message</comportement_fin>    <!-- valeurs possibles : sortie|continuer|sortie_message|continuer_message -->
+            <message_sortie>Dommage tu t'es trompé. Quitte l'application</message_sortie>
+            <message_continuer>Dommage tu t'es trompé. Continue à faire des exercices</message_continuer>
+        </config_par_defaut>
+    </configurations_attendues>
+
+
+    <consigne>T1 </consigne>
+
+    <nb_actions_de_reference>18</nb_actions_de_reference>
+
+</scenario>

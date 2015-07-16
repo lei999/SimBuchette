@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenario>
+    <fenetre>
+        <nb_buchettes>100</nb_buchettes>
+        <taille>G</taille>
+        <nb_groupement3>0</nb_groupement3>
+        <nb_groupement10>100</nb_groupement10>
+    </fenetre>
+
+    <boutons>
+        <vider></vider>
+        <annuler></annuler>
+        <terminer></terminer>
+        <reset></reset>
+    </boutons>
+    <!-- les boites ne sont visbles que si elles ont été définies -->
+    <!-- (c'est à dire si on veut que la boite i, i entre [1,4], soit visilbe <boite> <num_boite>i</num_boite></boite> -->
+    <!-- l'ordre des boites (c'est a dire du numéro) n'est pas important -->
+    <boite>
+        <!-- exemple de présence de toutes les informations possible-->
+        <!-- on n'est pas obligé de toutes les mettre mais il faut en respecter l'ordre -->
+        <num_boite>2</num_boite>
+        <nom> boite A</nom>
+        <nb_max_objets>6</nb_max_objets>
+        <type_objet>buchette</type_objet>
+        <!-- booléens, a false si les balises suivantes ne sont pas présentes -->
+        <different_objet></different_objet>
+        <affichage_machine></affichage_machine>
+        <popup></popup>
+    </boite>
+
+    <boite>
+        <num_boite>3</num_boite>
+        <nom>boite B</nom>
+        <nb_max_objets>100</nb_max_objets>
+        <type_objet>buchette</type_objet>
+        <affichage_machine></affichage_machine>
+    </boite>
+
+    <consigne> Mettre 6 bûchettes dans la boite A et 4 dans la boite B </consigne>
+
+    <!-- il faut englober chaque boite de la balise solution dans ce cas là, sinon il faut indiquer toutes les boites -->
+    <solution>
+        <boite>
+            <num_boite>2</num_boite>
+            <type_objet>buchette</type_objet>
+            <nb_objets>6</nb_objets>
+        </boite>
+    </solution>
+    <solution>
+        <boite>
+            <num_boite>3</num_boite>
+            <type_objet>buchette</type_objet>
+            <nb_objets>4</nb_objets>
+        </boite>
+    </solution>
+
+</scenario>

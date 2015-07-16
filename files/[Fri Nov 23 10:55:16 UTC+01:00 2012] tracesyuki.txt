@@ -1,0 +1,14 @@
+[Fri Nov 23 10:54:58 UTC+01:00 2012], Eleve, yuki
+[Fri Nov 23 10:54:59 UTC+01:00 2012], Exercice 4
+[Fri Nov 23 10:55:02 UTC+01:00 2012], deplacement,buchette,reserve, boite A,reussi
+[Fri Nov 23 10:55:03 UTC+01:00 2012], deplacement,groupement3,reserve, boite A,reussi
+[Fri Nov 23 10:55:09 UTC+01:00 2012], deplacement,groupement3,reserve, boite A,reussi
+[Fri Nov 23 10:55:10 UTC+01:00 2012], deplacement,groupement10,reserve,zoneGroupement,reussi
+[Fri Nov 23 10:55:10 UTC+01:00 2012], defaireGroupement, réussi,groupement10
+[Fri Nov 23 10:55:10 UTC+01:00 2012], grouper,réussi,buchette,buchette,buchette,buchette,buchette,buchette,buchette,buchette,buchette,buchette
+[Fri Nov 23 10:55:11 UTC+01:00 2012], deplacement,groupement10,zoneGroupement,table ,reussi
+[Fri Nov 23 10:55:12 UTC+01:00 2012], deplacement,groupement3, boite A,table ,reussi
+[Fri Nov 23 10:55:13 UTC+01:00 2012], deplacement,groupement10,table ,zoneGroupement,reussi
+[Fri Nov 23 10:55:14 UTC+01:00 2012], deplacement,groupement3,table , boite A,reussi
+[Fri Nov 23 10:55:14 UTC+01:00 2012], vider, boite A, [buchette, groupement3, groupement3 ]
+[Fri Nov 23 10:55:15 UTC+01:00 2012], annuler, vider

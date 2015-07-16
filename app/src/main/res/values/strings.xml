@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SimBuchettes</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_accueil">Accueil</string>
+    <string name="title_activity_exercice">Exercice</string>
+    <string name="title_activity_exercice__terminer">Exercice terminé</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_action_bar_button">Exercice</string>
+    <string name="title_activity_traces">Traces</string>
+    <string name="title_activity_exercice__groupements">Exercice_Groupements</string>
+    <string name="title_activity_traces2">Traces2</string>
+    <string name="title_activity_exercice__groupement__selection">Exercice_Groupement_Selection
+    </string>
+    <string name="title_activity_nom_eleve">Accueil</string>
+    <string name="title_activity_exercice_complement">ExerciceComplement</string>
+    <string name="title_activity_choix_exercice">ChoixExercice</string>
+    <string name="title_activity_selection_tablette">Accueil</string>
+
+</resources>

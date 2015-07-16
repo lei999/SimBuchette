@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="green">#008000</color>
+    <color name="greenYellow">#B0FF30</color>
+    <color name="lavender">#E0E4F8</color>
+    <color name="orange">#FFA800</color>
+    <color name="darkGoldenrod">#B88410</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="goldenrod">#D8A420</color>
+    <color name="peru">#C88440</color>
+    <color name="saddleBrown">#904818</color>
+    <color name="silver">#C0C0C0</color>
+
+
+</resources>

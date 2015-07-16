@@ -1,0 +1,17 @@
+[Fri Nov 23 10:49:21 UTC+01:00 2012], Eleve, Michael
+[Fri Nov 23 10:49:23 UTC+01:00 2012], Exercice 4
+[Fri Nov 23 10:49:25 UTC+01:00 2012], deplacement,groupement3,reserve, boite A,reussi
+[Fri Nov 23 10:49:25 UTC+01:00 2012], deplacement,groupement10,reserve, boite A,reussi
+[Fri Nov 23 10:49:26 UTC+01:00 2012], deplacement,groupement3,reserve, boite A,reussi
+[Fri Nov 23 10:49:28 UTC+01:00 2012], deplacement,buchette,reserve,table ,reussi
+[Fri Nov 23 10:49:29 UTC+01:00 2012], deplacement,groupement3, boite A, boite A,reussi
+[Fri Nov 23 10:49:30 UTC+01:00 2012], deplacement,groupement10, boite A,zoneGroupement,reussi
+[Fri Nov 23 10:49:30 UTC+01:00 2012], defaireGroupement, réussi,groupement10
+[Fri Nov 23 10:49:31 UTC+01:00 2012], grouper,réussi,buchette,buchette,buchette,buchette,buchette,buchette,buchette,buchette,buchette,buchette
+[Fri Nov 23 10:49:32 UTC+01:00 2012], deplacement,groupement10,zoneGroupement,table ,reussi
+[Fri Nov 23 10:49:33 UTC+01:00 2012], annuler, deplacement
+[Fri Nov 23 10:49:35 UTC+01:00 2012], deplacement,groupement10,zoneGroupement, boite A,reussi
+[Fri Nov 23 10:49:35 UTC+01:00 2012], vider, boite A, [groupement3, groupement3, groupement10 ]
+[Fri Nov 23 10:49:36 UTC+01:00 2012], annuler, vider
+[Fri Nov 23 10:49:37 UTC+01:00 2012], deplacement,groupement3, boite A,table ,reussi
+[Fri Nov 23 10:49:37 UTC+01:00 2012], deplacement,groupement3, boite A,table ,reussi

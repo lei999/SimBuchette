@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ter.app.applicationtest" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="21" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="21" />
+    <android:uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo2"
+        android:label="AppTER"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".FenetresActivity.Accueil"
+            android:label="@string/title_activity_accueil"
+            android:screenOrientation="landscape" >
+
+        </activity>
+        <activity
+            android:name=".FenetresActivity.Exercice_Simple"
+            android:label="@string/title_activity_exercice"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".FenetresActivity.Exercice_Terminer"
+            android:label="@string/title_activity_exercice__terminer"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".FenetresActivity.Exercice_Groupement"
+            android:label="@string/title_activity_action_bar_button"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".FenetresActivity.Nom_Eleve"
+            android:label="Accueil"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".FenetresActivity.Exercice_Grandes_Boites"
+            android:label="@string/title_activity_exercice_complement"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".FenetresActivity.Choix_Exercice"
+            android:label="@string/title_activity_choix_exercice"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".FenetresActivity.SelectionTablette"
+            android:label="@string/title_activity_selection_tablette" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

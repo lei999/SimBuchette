@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenario>
+    <fenetre>
+        <taille>P</taille>
+        <nb_buchettes>300</nb_buchettes>
+        <utilisation_zone_groupements>non</utilisation_zone_groupements>
+        <exercice_complement>oui</exercice_complement>
+        <utilisation_dupliquer>oui</utilisation_dupliquer>
+
+
+    </fenetre>
+
+    <boutons>
+        <vider></vider>
+        <terminer></terminer>
+    </boutons>
+
+    <boite>
+        <num_boite>1</num_boite>
+        <nom>Boite A</nom>
+        <nb_max_objets>100</nb_max_objets>
+        <type_objet>groupement10</type_objet>
+        <affichage_machine></affichage_machine>
+    </boite>
+
+    <boite>
+        <num_boite>2</num_boite>
+        <nom>Boite B</nom>
+        <nb_max_objets>100</nb_max_objets>
+        <type_objet>buchette</type_objet>
+        <affichage_machine></affichage_machine>
+    </boite>
+
+
+    <solution>
+        <boite>
+            <num_boite>1</num_boite>
+            <type_objet>groupement10</type_objet>
+            <nb_objets>2</nb_objets>
+        </boite>
+        <boite>
+            <num_boite>2</num_boite>
+            <type_objet>buchette</type_objet>
+            <nb_objets>3</nb_objets>
+        </boite>
+    </solution>
+
+
+
+    <consigne> Mettre 2 groupement de 10 dans la boite A et 3 bûchettes dans la boite B </consigne>
+
+
+</scenario>

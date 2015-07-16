@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenario>
+    <fenetre>
+        <taille>P</taille>
+        <nb_buchettes>100</nb_buchettes>
+        <nb_groupement3>0</nb_groupement3>
+        <nb_groupement10>0</nb_groupement10>
+        <utilisation_zone_groupements>non</utilisation_zone_groupements>
+        <exercice_complement>non</exercice_complement>
+        <utilisation_dupliquer>non</utilisation_dupliquer>
+        <groupement3_possible>non</groupement3_possible>
+        <groupement10_possible>non</groupement10_possible>
+        <groupement100_possible>non</groupement100_possible>
+    </fenetre>
+
+    <boutons>
+        <vider></vider>
+        <terminer></terminer>
+    </boutons>
+
+    <boite>
+        <num_boite>1</num_boite>
+        <nom> Boite A </nom>
+        <nb_max_objets>5</nb_max_objets>
+        <type_objet>buchette</type_objet>
+        <affichage_machine></affichage_machine>
+        <popup></popup>
+    </boite>
+
+
+    <boite>
+        <num_boite>2</num_boite>
+        <nom> Boite B </nom>
+        <nb_max_objets>10</nb_max_objets>
+        <type_objet>buchette</type_objet>
+        <affichage_machine></affichage_machine>
+        <popup></popup>
+    </boite>
+    <boite>
+        <num_boite>3</num_boite>
+        <nom> Boite C </nom>
+        <nb_max_objets>100</nb_max_objets>
+        <type_objet>buchette</type_objet>
+        <affichage_machine></affichage_machine>
+    </boite>
+
+
+
+    <solution>
+        <boite>
+            <num_boite>1</num_boite>
+            <type_objet>buchette</type_objet>
+            <nb_objets>0</nb_objets>
+        </boite>
+    </solution>
+
+    <solution>
+        <boite>
+            <num_boite>2</num_boite>
+            <type_objet>buchette</type_objet>
+            <nb_objets>0</nb_objets>
+        </boite>
+    </solution>
+
+    <solution>
+        <boite>
+            <num_boite>3</num_boite>
+            <type_objet>buchette</type_objet>
+            <nb_objets>15</nb_objets>
+        </boite>
+    </solution>
+
+    <consigne> 1-Mets 5 bâtons dans la boite A.
+        2-Dans la boite B, mets les bâtons qui te manquent pour en avoir 15 en tout.
+        3-Prends les bâtons de la boite A et ceux de la boite B puis mets les tous dans la boite C pour vérifier que tu en as bien 15</consigne>
+
+
+</scenario>

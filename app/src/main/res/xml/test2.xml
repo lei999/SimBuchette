@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenario>
+    <objets>
+        <taille_objet></taille_objet>  <!-- grande | moyenne | petite -->
+        <nb_buchettes></nb_buchettes>
+        <nb_groupement3></nb_groupement3>
+    </objets>
+
+
+    <boutons>
+        <vider></vider>
+        <annuler></annuler>
+        <terminer></terminer>
+        <reset></reset>
+    </boutons>
+    <boite>
+        <visible></visible>
+        <nom></nom>
+        <nb_max_objets></nb_max_objets>
+        <type_objet></type_objet>
+        <different_objet></different_objet>
+        <affichage_machine></affichage_machine>
+        <popup></popup>
+    </boite>
+    <boite>
+        <visible></visible>
+        <nom></nom>
+        <nb_max_objets></nb_max_objets>
+        <type_objet></type_objet>
+        <different_objet></different_objet>
+        <affichage_machine></affichage_machine>
+        <popup></popup>
+    </boite>
+    <boite>
+        <visible></visible>
+        <nom></nom>
+        <nb_max_objets></nb_max_objets>
+        <type_objet></type_objet>
+        <different_objet></different_objet>
+        <affichage_machine></affichage_machine>
+        <popup></popup>
+    </boite>
+    <boite>
+        <visible></visible>
+        <nom></nom>
+        <nb_max_objets></nb_max_objets>
+        <type_objet></type_objet>
+        <different_objet></different_objet>
+        <affichage_machine></affichage_machine>
+        <popup></popup>
+    </boite>
+
+    <consigne></consigne>
+
+    <solution>
+        <boite>
+            <type_objet></type_objet>
+            <nb_objets></nb_objets>
+        </boite>
+        <boite>
+            <type_objet></type_objet>
+            <nb_objets></nb_objets>
+        </boite>
+        <boite>
+            <type_objet></type_objet>
+            <nb_objets></nb_objets>
+        </boite>
+        <boite>
+            <type_objet></type_objet>
+            <nb_objets></nb_objets>
+        </boite>
+    </solution>
+
+</scenario>

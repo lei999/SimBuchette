@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenario>
+    <taille_objets>
+        <taille_buchettes>G | M | P</taille_buchettes> (anciennement : taille)
+        <taille_boites>G | M </taille_boites> (anciennement : exercice_complement)
+    </taille_objets>
+
+    <elements_presents_dans_interface>
+        <zone_groupements>oui | non</zone_groupements>
+        <zone_duplication>oui | non </zone_duplication>
+        <poubelle>oui | non </poubelle>
+        <bouton_fin>Suivant | Terminer </bouton_fin>
+    </elements_presents_dans_interface>
+
+    <contraintes_cardinalite_reserve>
+        <nb_buchettes_depart>100</nb_buchettes_depart>
+        <nb_groupement3_depart>0</nb_groupement3_depart>
+        <nb_groupement10_depart>0</nb_groupement10_depart>
+        <nb_groupement100_depart>0</nb_groupement100_depart>
+        <nb_groupement100b_depart>0</nb_groupement100b_depart>
+    </contraintes_cardinalite_reserve>
+
+    <!-- version abandonnee
+    <boite_1>
+        <visible>oui|non</visible>
+        <nom_affiche> centaines </nom_affiche>
+        <contraintes_boite>
+            <nb_max_objets>3</nb_max_objets>
+            <comportement_depassement>autorisation_action|refus_action|autorisation_et_message|refus_et_message</comportement_depassement>
+            <message_depassement>texte du message</message_depassement>
+            <autorisation_buchette>oui|non</autorisation_buchette>
+            <comportement_si_erreur>autorisation_action|refus_action|autorisation_et_message|refus_et_message</comportement_si_erreur>
+            <message_si_erreur>texte du message</message_si_erreur>
+
+        </contraintes_boite>
+    </boite_1>
+ -->
+
+    <boite_1>
+        <visible>oui|non</visible>
+        <nom_affiche> centaines </nom_affiche>
+        <contraintes_boite>
+            <nombre_max_buchette> 10</nombre_max_buchette>
+            <comportement_si_depassement>autorisation_action|refus_action|autorisation_et_message|refus_et_message</comportement_si_depassement>
+            <message_si_depassementr>texte du message</message_si_depassementr>
+            <nombre_max_groupement10> 0</nombre_max_groupement10>
+            <comportement_si_depassement>autorisation_action|refus_action|autorisation_et_message|refus_et_message</comportement_si_depassement>
+            <message_si_depassementr>texte du message</message_si_depassementr>
+            <!-- et meme chose pour tous les types -->
+        </contraintes_boite>
+    </boite_1>
+
+    <regles_groupements>
+        <groupement_3>non</groupement_3>
+        <comportement_si_erreur>autorisation_action|refus_action|autorisation_et_message|refus_et_message</comportement_si_erreur>
+        <message_si_autorisation>texte du message</message_si_autorisation>
+        <message_si_refus>texte du message</message_si_refus>
+        <groupement_10>oui</groupement_10>
+        <comportement_si_erreur>autorisation_action|refus_action|autorisation_et_message|refus_et_message</comportement_si_erreur>
+        <message_si_erreur>texte du message</message_si_erreur>
+        <groupement_100_unites>oui|non</groupement_100_unites>
+        <comportement_si_erreur>autorisation_action|refus_action|autorisation_et_message|refus_et_message</comportement_si_erreur>
+        <message_si_erreur>texte du message</message_si_erreur>
+        <groupement_100_groupement_10>oui|non</groupement_100_groupement_10>
+        <comportement_si_erreur>autorisation_action|refus_action|autorisation_et_message|refus_et_message</comportement_si_erreur>
+        <message_si_erreur>texte du message</message_si_erreur>
+     </regles_groupements>
+
+    <configurations_attendues>
+        <config>
+            <nom_configuration>bonne_solution</nom_configuration>
+            <boite_1>
+            <buchette>3</buchette>
+            <groupement10b>0</groupement10b>
+            <groupement100b>0</groupement100b>
+            <groupement_groupement10>0</groupement_groupement10>
+            </boite_1>
+            <table_vide>oui|non</table_vide>
+            <comportement_fin>sortie|continuer|sortie_message|continuer_message|</comportement_fin>
+            <message_sortie>bravo</message_sortie>
+            <message_continuer>ce n'est pas correct, continue</message_continuer>
+        </config>
+        <config>
+            <nom_configuration>erreur_1</nom_configuration>
+            <boite_1>
+                <buchette>3</buchette>
+                <groupement10b>0</groupement10b>
+                <groupement100b>0</groupement100b>
+                <groupement_groupement10>0</groupement_groupement10>
+            </boite_1>
+            <table_vide>oui|non</table_vide>
+        </config>
+    </configurations_attendues>
+
+    <consigne>Mets 323 bâtons dans la boîte.</consigne>
+    <nb_actions_de_reference>12</nb_actions_de_reference>
+
+</scenario>

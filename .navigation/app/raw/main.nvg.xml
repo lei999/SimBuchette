@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.ter.app.applicationtest.FenetresActivity.Accueil"/>
+      <point      
+        x = "500"      
+        y = "100"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "com.ter.app.applicationtest.FenetresActivity.Accueil"/>
+      <point      
+        x = "2280"      
+        y = "100"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.ter.app.applicationtest.FenetresActivity.ActionBarButton"/>
+      <point      
+        x = "500"      
+        y = "4600"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "com.ter.app.applicationtest.FenetresActivity.ActionBarButton"/>
+      <point      
+        x = "2280"      
+        y = "4600"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "com.ter.app.applicationtest.FenetresActivity.Activity_Traces"/>
+      <point      
+        x = "2280"      
+        y = "6400"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.ter.app.applicationtest.FenetresActivity.Activity_Traces"/>
+      <point      
+        x = "500"      
+        y = "6400"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.ter.app.applicationtest.FenetresActivity.Exercice_Groupements"/>
+      <point      
+        x = "500"      
+        y = "1000"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "com.ter.app.applicationtest.FenetresActivity.Exercice_Groupements"/>
+      <point      
+        x = "2280"      
+        y = "1000"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.ter.app.applicationtest.FenetresActivity.old_accueil"/>
+      <point      
+        x = "500"      
+        y = "1900"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "com.ter.app.applicationtest.FenetresActivity.old_accueil"/>
+      <point      
+        x = "2280"      
+        y = "1900"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.ter.app.applicationtest.FenetresActivity.NomEleve"/>
+      <point      
+        x = "500"      
+        y = "2800"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "com.ter.app.applicationtest.FenetresActivity.NomEleve"/>
+      <point      
+        x = "2280"      
+        y = "2800"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.ter.app.applicationtest.FenetresActivity.ExerciceComplement"/>
+      <point      
+        x = "500"      
+        y = "3700"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "com.ter.app.applicationtest.FenetresActivity.ExerciceComplement"/>
+      <point      
+        x = "2280"      
+        y = "3700"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "com.ter.app.applicationtest.FenetresActivity.FenetreExercice"/>
+      <point      
+        x = "2280"      
+        y = "5500"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.ter.app.applicationtest.FenetresActivity.FenetreExercice"/>
+      <point      
+        x = "500"      
+        y = "5500"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "com.ter.app.applicationtest.FenetresActivity.Exercice_Terminer"/>
+      <point      
+        x = "2280"      
+        y = "7300"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.ter.app.applicationtest.FenetresActivity.Exercice_Terminer"/>
+      <point      
+        x = "500"      
+        y = "7300"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

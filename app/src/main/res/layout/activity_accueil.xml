@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ter.app.applicationtest.FenetresActivity.Accueil">
+
+    <RelativeLayout
+        android:layout_width="500dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <Button
+            android:id="@+id/autonome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autonome"
+            />
+        <Button
+            android:id="@+id/comunication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Communication"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+
+
+    <!--    <TextView
+          android:id="@+id/consigne"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Choix de l'exercice : "
+          android:layout_above="@+id/parametresConsigne"
+          android:textSize="20sp"
+          />
+
+          <Button
+             android:id="@+id/senario_1"
+             android:layout_width="170dip"
+             android:layout_height="wrap_content"
+             android:text="C1_1"
+             android:textSize="20sp"
+             android:layout_below="@+id/consigne"/>
+
+         <Button
+             android:id="@+id/senario_2"
+             android:layout_width="170dip"
+             android:layout_height="wrap_content"
+             android:text="C1_2"
+             android:textSize="20sp"
+             android:layout_below="@+id/senario_1"
+             />
+       <Button
+             android:id="@+id/senario_3"
+             android:layout_width="170dip"
+             android:layout_height="wrap_content"
+             android:text="C2_1"
+             android:textSize="20sp"
+             android:layout_below="@+id/senario_2"
+             />
+         <Button
+             android:id="@+id/senario_4"
+             android:layout_width="170dip"
+             android:layout_height="wrap_content"
+             android:text="C2_2"
+             android:textSize="20sp"
+             android:layout_below="@+id/senario_3"
+             />
+         <Button
+             android:id="@+id/senario_5"
+             android:layout_width="170dip"
+             android:layout_height="wrap_content"
+             android:text="C2_3"
+             android:textSize="20sp"
+             android:layout_below="@+id/senario_4"
+             />
+         <Button
+             android:id="@+id/senario_6"
+             android:layout_width="170dip"
+             android:layout_height="wrap_content"
+             android:text="C2_4"
+             android:textSize="20sp"
+             android:layout_below="@+id/senario_5"
+             />
+         <Button
+             android:id="@+id/senario_7"
+             android:layout_width="170dip"
+             android:layout_height="wrap_content"
+             android:text="C2_5"
+             android:textSize="20sp"
+             android:layout_below="@+id/senario_6"
+             />
+         <Button
+             android:id="@+id/senario_8"
+             android:layout_width="170dip"
+             android:layout_height="wrap_content"
+             android:text="C2_6"
+             android:textSize="20sp"
+             android:layout_below="@+id/senario_7"
+             />
+
+         <Button
+             android:id="@+id/senario_9"
+             android:layout_width="170dip"
+             android:layout_height="wrap_content"
+             android:text="S1"
+             android:textSize="20sp"
+             android:layout_marginLeft="200dp"
+             android:layout_alignTop="@id/senario_1"
+             />
+         <Button
+             android:id="@+id/senario_10"
+             android:layout_width="170dip"
+             android:layout_height="wrap_content"
+             android:text="S2"
+             android:textSize="20sp"
+             android:layout_marginLeft="200dp"
+             android:layout_below="@+id/senario_9"
+             />
+
+         <Button
+             android:id="@+id/senario_11"
+             android:layout_width="170dip"
+             android:layout_height="wrap_content"
+             android:text="S3"
+             android:textSize="20sp"
+             android:layout_marginLeft="200dp"
+             android:layout_alignBottom="@id/senario_1"
+             />
+
+
+         <Button
+             android:id="@+id/nouvelEleve"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentBottom="true"
+             android:text="Nouvel Èlève"/>
+
+             -->
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenario>
+    <fenetre>
+        <taille>M</taille>
+        <nb_buchettes>100</nb_buchettes>
+        <nb_groupement3>0</nb_groupement3>
+        <nb_groupement10>0</nb_groupement10>
+        <nb_groupement100>0</nb_groupement100>
+        <nb_groupement100b>0</nb_groupement100b>
+        <utilisation_zone_groupements>oui</utilisation_zone_groupements>
+        <exercice_complement>non</exercice_complement>
+        <utilisation_dupliquer>oui</utilisation_dupliquer>
+        <groupement3_possible>non</groupement3_possible>
+        <groupement10_possible>oui</groupement10_possible>
+        <groupement100_possible>oui</groupement100_possible>
+        <groupement_simple>non</groupement_simple>
+    </fenetre>
+
+    <boutons>
+        <vider></vider>
+        <terminer></terminer>
+    </boutons>
+
+    <boite>
+        <num_boite>1</num_boite>
+        <nom> centaines </nom>
+        <nb_max_objets>3</nb_max_objets>
+        <type_objet>groupement100</type_objet>
+        <affichage_machine></affichage_machine>
+        <popup></popup>
+    </boite>
+
+    <boite>
+        <num_boite>2</num_boite>
+        <nom> dizaine </nom>
+        <nb_max_objets>2</nb_max_objets>
+        <type_objet>groupement10</type_objet>
+        <affichage_machine></affichage_machine>
+        <popup></popup>
+    </boite>
+
+    <boite>
+        <num_boite>3</num_boite>
+        <nom> unité </nom>
+        <nb_max_objets>3</nb_max_objets>
+        <type_objet>buchette</type_objet>
+        <affichage_machine></affichage_machine>
+        <popup></popup>
+
+    </boite>
+
+
+    <solution>
+        <boite>
+            <num_boite>1</num_boite>
+            <type_objet>groupement100</type_objet>
+            <nb_objets>3</nb_objets>
+        </boite>
+    </solution>
+
+
+    <solution>
+        <boite>
+            <num_boite>2</num_boite>
+            <type_objet>groupement10</type_objet>
+            <nb_objets>2</nb_objets>
+        </boite>
+    </solution>
+
+    <solution>
+        <boite>
+            <num_boite>3</num_boite>
+            <type_objet>buchette</type_objet>
+            <nb_objets>3</nb_objets>
+        </boite>
+    </solution>
+
+    <consigne>Mets 323 bâtons dans la boîte.</consigne>
+
+
+</scenario>

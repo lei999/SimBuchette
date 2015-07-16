@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenario>
+    <fenetre>
+        <nb_buchettes>100</nb_buchettes>
+    </fenetre>
+
+    <boutons>
+        <vider></vider>
+        <annuler></annuler>
+        <terminer></terminer>
+    </boutons>
+
+    <boite>
+        <num_boite>2</num_boite>
+        <nom> boite A</nom>
+        <nb_max_objets>100</nb_max_objets>
+        <type_objet>buchette</type_objet>
+        <affichage_machine></affichage_machine>
+    </boite>
+
+    <boite>
+        <num_boite>3</num_boite>
+        <nom>boite B</nom>
+        <nb_max_objets>100</nb_max_objets>
+        <type_objet>buchette</type_objet>
+        <affichage_machine></affichage_machine>
+    </boite>
+
+
+    <solution>
+        <boite>
+            <num_boite>2</num_boite>
+            <type_objet>buchette</type_objet>
+            <nb_objets>6</nb_objets>
+        </boite>
+    </solution>
+
+    <solution>
+        <boite>
+            <num_boite>3</num_boite>
+            <type_objet>buchette</type_objet>
+            <nb_objets>4</nb_objets>
+        </boite>
+    </solution>
+
+    <consigne> Mettre 6 bûchettes dans la boite A et 4 dans la boite B </consigne>
+
+
+</scenario>

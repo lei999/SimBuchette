@@ -1,0 +1,567 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin_perso"
+    android:paddingRight="@dimen/activity_horizontal_margin_perso"
+    android:paddingTop="@dimen/activity_vertical_margin_perso"
+    android:paddingBottom="@dimen/activity_vertical_margin_perso"
+    tools:context="com.ter.app.applicationtest.FenetresActivity.Exercice_Groupement">
+
+    <RelativeLayout
+        android:id="@+id/reserve"
+        android:layout_width="120dip"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/buchette"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Bâtons"
+            android:textSize="20sp"/>
+        <RelativeLayout
+            android:id="@+id/reserveBuchette"
+            android:layout_below="@id/buchette"
+            android:layout_width="200dip"
+            android:layout_height="100dip"
+            android:background="@color/white">
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/groupement"
+            android:layout_below="@id/reserveBuchette"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Groupement"
+            android:textSize="20sp"/>
+        <RelativeLayout
+            android:id="@+id/reserveGroupement"
+            android:layout_below="@id/groupement"
+            android:layout_width="200dip"
+            android:layout_height="250dip"
+            android:background="@color/white">
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/dupliquer"
+            android:layout_below="@id/reserveGroupement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Dupliquer"
+            android:textSize="20sp"/>
+        <RelativeLayout
+            android:id="@+id/zone_dupliquer"
+            android:layout_below="@id/dupliquer"
+            android:layout_width="200dip"
+            android:layout_height="250dip"
+            android:background="@color/white">
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/consigne"
+        android:layout_width="1060dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dip"
+        android:textSize="20sp"
+        android:background="@color/white"/>
+
+
+    <RelativeLayout
+        android:id="@+id/contenant"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_marginLeft="150dip"
+        android:layout_marginTop="180dip"
+        android:background="@color/white">
+
+
+        <TextView
+            android:layout_width="152dip"
+            android:layout_height="48dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/yellow"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/main"
+            android:background="@color/lavender"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/elements_boite0"
+        android:layout_width="200dip"
+        android:layout_height="48dip"
+        android:layout_below="@id/contenant"
+        android:layout_alignLeft="@id/contenant"
+        android:background="@color/greenYellow"
+        >
+        <ImageView
+            android:id="@+id/image_buchette_boite0"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:src="@drawable/buchette_p"/>
+        <TextView
+            android:id="@+id/buchette_boite0"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:layout_toRightOf="@id/image_buchette_boite0"
+            android:text="0"
+            android:textSize="20sp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/image_groupement10_boite0"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:layout_toRightOf="@id/buchette_boite0"
+            android:src="@drawable/groupement10_p"/>
+        <TextView
+            android:id="@+id/groupement10_boite0"
+            android:layout_width="50dip"
+            android:layout_toRightOf="@id/image_groupement10_boite0"
+            android:layout_height="22dip"
+            android:text="0"
+            android:textSize="20sp"
+            />
+
+        <ImageView
+            android:id="@+id/image_groupement100_boite0"
+            android:layout_alignParentBottom="true"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:src="@drawable/groupement100_m"/>
+        <TextView
+            android:id="@+id/groupement100_boite0"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:layout_below="@id/buchette_boite0"
+            android:layout_toRightOf="@id/image_groupement100_boite0"
+
+            android:text="0"
+            android:textSize="20sp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/image_groupement100b_boite0"
+            android:layout_toRightOf="@id/groupement100_boite0"
+            android:layout_alignParentBottom="true"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:src="@drawable/groupement100b_p"/>
+        <TextView
+            android:id="@+id/groupement100b_boite0"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/image_groupement100b_boite0"
+            android:text="0"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/contenant2"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_marginLeft="380dip"
+        android:layout_marginTop="180dip"
+        android:background="@color/white">
+
+
+        <TextView
+            android:layout_width="152dip"
+            android:layout_height="48dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/yellow"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/main"
+            android:background="@color/lavender"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/elements_boite1"
+        android:layout_width="200dip"
+        android:layout_height="48dip"
+        android:layout_below="@id/contenant2"
+        android:layout_alignLeft="@id/contenant2"
+        android:background="@color/greenYellow"
+        >
+        <ImageView
+            android:id="@+id/image_buchette_boite1"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:src="@drawable/buchette_p"/>
+        <TextView
+            android:id="@+id/buchette_boite1"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:layout_toRightOf="@id/image_buchette_boite1"
+            android:text="0"
+            android:textSize="20sp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/image_groupement10_boite1"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:layout_toRightOf="@id/buchette_boite1"
+            android:src="@drawable/groupement10_p"/>
+        <TextView
+            android:id="@+id/groupement10_boite1"
+            android:layout_width="50dip"
+            android:layout_toRightOf="@id/image_groupement10_boite1"
+            android:layout_height="22dip"
+            android:text="0"
+            android:textSize="20sp"
+            />
+
+        <ImageView
+            android:id="@+id/image_groupement100_boite1"
+            android:layout_alignParentBottom="true"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:src="@drawable/groupement100_m"/>
+        <TextView
+            android:id="@+id/groupement100_boite1"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:layout_below="@id/buchette_boite1"
+            android:layout_toRightOf="@id/image_groupement100_boite1"
+
+            android:text="0"
+            android:textSize="20sp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/image_groupement100b_boite1"
+            android:layout_toRightOf="@id/groupement100_boite1"
+            android:layout_alignParentBottom="true"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:src="@drawable/groupement100b_p"/>
+        <TextView
+            android:id="@+id/groupement100b_boite1"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/image_groupement100b_boite1"
+            android:text="0"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/contenant3"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_marginLeft="610dip"
+        android:layout_marginTop="180dip"
+        android:background="@color/white">
+
+
+        <TextView
+            android:layout_width="152dip"
+            android:layout_height="48dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/yellow"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/main"
+            android:background="@color/lavender"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/elements_boite2"
+        android:layout_width="200dip"
+        android:layout_height="48dip"
+        android:layout_below="@id/contenant3"
+        android:layout_alignLeft="@id/contenant3"
+        android:background="@color/greenYellow"
+        >
+        <ImageView
+            android:id="@+id/image_buchette_boite2"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:src="@drawable/buchette_p"/>
+        <TextView
+            android:id="@+id/buchette_boite2"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:layout_toRightOf="@id/image_buchette_boite2"
+            android:text="0"
+            android:textSize="20sp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/image_groupement10_boite2"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:layout_toRightOf="@id/buchette_boite2"
+            android:src="@drawable/groupement10_p"/>
+        <TextView
+            android:id="@+id/groupement10_boite2"
+            android:layout_width="50dip"
+            android:layout_toRightOf="@id/image_groupement10_boite2"
+            android:layout_height="22dip"
+            android:text="0"
+            android:textSize="20sp"
+            />
+
+        <ImageView
+            android:id="@+id/image_groupement100_boite2"
+            android:layout_alignParentBottom="true"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:src="@drawable/groupement100_m"/>
+        <TextView
+            android:id="@+id/groupement100_boite2"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:layout_below="@id/buchette_boite2"
+            android:layout_toRightOf="@id/image_groupement100_boite2"
+
+            android:text="0"
+            android:textSize="20sp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/image_groupement100b_boite2"
+            android:layout_toRightOf="@id/groupement100_boite2"
+            android:layout_alignParentBottom="true"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:src="@drawable/groupement100b_p"/>
+        <TextView
+            android:id="@+id/groupement100b_boite2"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/image_groupement100b_boite2"
+            android:text="0"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/contenant4"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_marginLeft="840dip"
+        android:layout_marginTop="180dip"
+        android:background="@color/white">
+
+
+        <TextView
+            android:layout_width="152dip"
+            android:layout_height="48dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/yellow"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/main"
+            android:background="@color/lavender"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/elements_boite3"
+        android:layout_width="200dip"
+        android:layout_height="48dip"
+        android:layout_below="@id/contenant4"
+        android:layout_alignLeft="@id/contenant4"
+        android:background="@color/greenYellow"
+        >
+        <ImageView
+            android:id="@+id/image_buchette_boite3"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:src="@drawable/buchette_p"/>
+        <TextView
+            android:id="@+id/buchette_boite3"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:layout_toRightOf="@id/image_buchette_boite3"
+            android:text="0"
+            android:textSize="20sp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/image_groupement10_boite3"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:layout_toRightOf="@id/buchette_boite3"
+            android:src="@drawable/groupement10_p"/>
+        <TextView
+            android:id="@+id/groupement10_boite3"
+            android:layout_width="50dip"
+            android:layout_toRightOf="@id/image_groupement10_boite3"
+            android:layout_height="22dip"
+            android:text="0"
+            android:textSize="20sp"
+            />
+
+        <ImageView
+            android:id="@+id/image_groupement100_boite3"
+            android:layout_alignParentBottom="true"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:src="@drawable/groupement100_m"/>
+        <TextView
+            android:id="@+id/groupement100_boite3"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:layout_below="@id/buchette_boite3"
+            android:layout_toRightOf="@id/image_groupement100_boite3"
+
+            android:text="0"
+            android:textSize="20sp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/image_groupement100b_boite3"
+            android:layout_toRightOf="@id/groupement100_boite3"
+            android:layout_alignParentBottom="true"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:src="@drawable/groupement100b_p"/>
+        <TextView
+            android:id="@+id/groupement100b_boite3"
+            android:layout_width="50dip"
+            android:layout_height="22dip"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/image_groupement100b_boite3"
+            android:text="0"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/zoneVider"
+        android:layout_width="160dip"
+        android:layout_height="160dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="340dip">
+
+        <ImageView
+            android:id="@+id/boutonVider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/poubelle_grise"
+            android:layout_centerInParent="true"
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/table"
+        android:layout_width="740dip"
+        android:layout_height="150dip"
+        android:layout_marginLeft="500dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        >
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/zone_groupement"
+        android:layout_alignLeft="@+id/zone_groupement">
+
+
+        <ImageButton
+            android:id="@+id/grouper"
+            android:layout_width="80dip"
+            android:layout_height="45dip"
+            android:src="@drawable/ic_action_about"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/nbgrouper"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:background="@color/yellow"/>
+        <ImageButton
+            android:id="@+id/defaire"
+            android:layout_width="80dip"
+            android:layout_height="45dip"
+            android:src="@drawable/ciseaux"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/zone_groupement"
+        android:layout_width="200dip"
+        android:layout_height="150dip"
+        android:layout_marginLeft="130dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        >
+
+    </RelativeLayout>
+</RelativeLayout>
